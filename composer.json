@@ -1,5 +1,5 @@
 {
-    "name": "madmatt/silverstripe-activity",
+    "name": "madmatt/silverstripe-activitylog",
     "type": "silverstripe-vendormodule",
     "description": "Provides an activity feed for SilverStripe members",
     "homepage": "https://github.com/madmatt/silverstripe-activity",
