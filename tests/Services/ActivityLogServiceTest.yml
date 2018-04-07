@@ -1,0 +1,12 @@
+SilverStripe\Security\Member:
+  jane:
+    FirstName: Jane
+    Surname: Smith
+  lisa:
+    FirstName: Lisa
+    Surname: Simpson
+
+Madmatt\ActivityLog\Model\ActivityLogEntry:
+  entry1:
+    ActorID: =>SilverStripe\Security\Member.jane
+    OwnerID: =>SilverStripe\Security\Member.lisa
