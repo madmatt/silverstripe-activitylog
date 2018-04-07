@@ -2,7 +2,6 @@
 
 namespace Madmatt\ActivityLog\Model;
 
-use Madmatt\ActivityLog\FieldType\DBTarget;
 use SilverStripe\ORM\DataObject;
 use SilverStripe\ORM\FieldType\DBDatetime;
 use SilverStripe\ORM\FieldType\DBPolymorphicForeignKey;
