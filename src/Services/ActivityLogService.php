@@ -8,7 +8,7 @@ use SilverStripe\Security\Member;
 
 class ActivityLogService
 {
-    public function getActivitiesFor(Member $member = null): DataList
+    public function getActivitiesFor(Member $member = null): ?DataList
     {
         if (!$member) {
             return null;
