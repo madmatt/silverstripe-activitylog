@@ -1,0 +1,17 @@
+SilverStripe\Security\Group:
+  admin:
+    Code: administrators
+    Title: Administrators
+
+SilverStripe\Security\Permission:
+  admin:
+    Code: ADMIN
+    Type: 1
+    GroupID: =>SilverStripe\Security\Group.admin
+
+
+SilverStripe\Security\Member:
+  jane:
+    FirstName: Jane
+    Surname: Smith
+    Groups: =>SilverStripe\Security\Group.admin
