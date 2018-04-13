@@ -22,7 +22,7 @@ class ActivityLogService
     
     /**
      * List of all enabled activities, set by config.
-     * 
+     *
      * @var array
      * @config
      */
@@ -38,9 +38,9 @@ class ActivityLogService
     }
 
     /**
-     * Determines whether the given activity class is enabled or not. Used primarily by activities themselves when 
+     * Determines whether the given activity class is enabled or not. Used primarily by activities themselves when
      * determining if an activity should be logged or not.
-     * 
+     *
      * @param string $classNameThe fully-qualified classname of the activity class
      * @return bool
      */

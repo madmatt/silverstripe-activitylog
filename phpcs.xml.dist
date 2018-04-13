@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ruleset name="Default">
+	<rule ref="PSR2"/>
+
+	<arg name="report-code"/>
+	<arg name="report-summary"/>
+
+	<file>src</file>
+	<file>tests</file>
+</ruleset>

@@ -7,8 +7,6 @@ use Madmatt\ActivityLog\Model\ActivityLogEntry;
 /**
  * Class SiteTreePublicationActivity
  * @package Madmatt\ActivityLog
- * 
- * 
  */
 class SiteTreePublicationActivity extends ActivityLogEntry
 {
