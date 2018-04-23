@@ -43,6 +43,6 @@ class SiteTreePublicationExtensionTest extends SapphireTest
         $this->assertSame(1, ActivityLogEntry::get()->count());
         $this->assertSame($member->ID, $entry->Owner()->ID);
         $this->assertSame($member->ID, $entry->Actor()->ID);
-        $this->assertSame($st->ID, $entry->TargetID);
+        $this->assertSame((int)$st->ID, (int)$entry->TargetID);
     }
 }
