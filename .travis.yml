@@ -9,10 +9,10 @@ matrix:
     - php: 7.2
 
 before_script:
-  - composer require silverstripe/recipe-core:1
+  - composer require silverstripe/recipe-testing:^1 silverstripe/recipe-cms:^1
 
 script:
-  - vendor/bin/phpunit --coverage-clover=coverage.xml tests/
+  - vendor/bin/phpunit
 
-after_script:
-  - bash <(curl -s https://codecov.io/bash)
+after_success:
+  - bash <(curl -s https://codecov.io/bash) -f coverage.xml

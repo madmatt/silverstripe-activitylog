@@ -1,0 +1,18 @@
+<phpunit bootstrap="tests/bootstrap.php" colors="true">
+    <testsuite name="Default">
+        <directory>tests</directory>
+    </testsuite>
+
+    <logging>
+        <log type="coverage-clover" target="coverage.xml" />
+    </logging>
+
+    <filter>
+        <whitelist addUncoveredFilesFromWhitelist="true">
+            <directory suffix=".php">.</directory>
+            <exclude>
+                <directory suffix=".php">tests</directory>
+            </exclude>
+        </whitelist>
+    </filter>
+</phpunit>
