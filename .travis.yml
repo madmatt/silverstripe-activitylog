@@ -7,12 +7,14 @@ matrix:
     - php: 7
     - php: 7.1
     - php: 7.2
+      env: COVERAGE=1
 
 before_script:
+  - if [[ $COVERAGE ]]; then penv config-rm xdebug.ini; fi
   - composer require silverstripe/recipe-testing:^1 silverstripe/recipe-cms:^1
 
 script:
   - vendor/bin/phpunit
 
 after_success:
-  - bash <(curl -s https://codecov.io/bash) -f coverage.xml
+  - if [[ $COVERAGE ]]; then bash <(curl -s https://codecov.io/bash) -f coverage.xml; fi
